@@ -2,12 +2,16 @@ GEM
   remote: https://rubygems.org/
   specs:
     smarter_csv (1.2.8)
+    terminal-table (3.0.1)
+      unicode-display_width (>= 1.1.1, < 3)
+    unicode-display_width (2.0.0)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
   smarter_csv
+  terminal-table
 
 BUNDLED WITH
    2.2.24

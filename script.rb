@@ -2,9 +2,10 @@ require 'smarter_csv'
 require 'terminal-table'
 
 require_relative 'lib/string_converter'
+require_relative 'lib/money_converter'
 
 filename = 'public/sample.csv'
-options = { col_sep: ';', value_converters: { string: StringConverter }}
+options = { col_sep: ';', value_converters: { string: StringConverter, money: MoneyConverter }}
 rows = []
 
 data = SmarterCSV.process(filename, options).each do |d|

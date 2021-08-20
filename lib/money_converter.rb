@@ -2,8 +2,7 @@ class MoneyConverter
   NDIGITS = 2
 
   def self.convert(value)
-    split_value = value.round(NDIGITS).to_s.split('.')
-    integer_part, fractional_part = split_value
+    integer_part, fractional_part = value.round(NDIGITS).to_s.split('.')
     new_integer_part = integer_part.reverse.gsub(/.{3}(?=.)/, '\0 ').reverse
 
     if fractional_part.size == NDIGITS

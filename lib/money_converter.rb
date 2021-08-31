@@ -7,7 +7,7 @@ class MoneyConverter
 
     if fractional_part.size == NDIGITS
       new_fractional_part = fractional_part
-    elsif integer_part == '0' && fractional_part == '0' && value != 0
+    elsif integer_part == '0' && fractional_part == '0' && value != 0.0
       new_fractional_part = "#{fractional_part}1"
     else
       new_fractional_part = "#{fractional_part}0"

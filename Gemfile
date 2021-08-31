@@ -7,4 +7,6 @@ gem "terminal-table"
 
 group :development do
   gem "rspec", "~> 3.10"
+  gem "rubocop"
+  gem "standard", "~> 1.0"
 end

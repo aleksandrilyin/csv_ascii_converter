@@ -1,6 +1,6 @@
 name: Lint Ruby
 
-on: push
+on: [push, pull_request]
 
 jobs:
   rubocop:

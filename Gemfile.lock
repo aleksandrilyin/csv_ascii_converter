@@ -49,11 +49,11 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  rspec (~> 3.10)
-  rubocop
+  rspec (~> 3.0)
+  rubocop (~> 1.0)
   smarter_csv
   standard (~> 1.0)
   terminal-table
 
 BUNDLED WITH
-   2.2.26
+   2.2.27

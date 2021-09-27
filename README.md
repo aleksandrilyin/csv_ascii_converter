@@ -16,20 +16,25 @@ bundle install
 
 ### Supported Ruby versions
 
-- Ruby (MRI) >= 2.7.0
+- Ruby (MRI) >= 2.6
 
 ## Usage
 
 Run the script:
 
 ```sh
-cat path/to/your/file.csv | ruby script.rb
+cat path/to/your/csvfile.csv | ruby script.rb
 ```
 
 ### Usage example
 
 ```sh
-cat public/sample.csv | ruby script.rb
+$ cat public/sample.csv
+int;string;money
+1;aaa bbb ccc;1000.33
+5;aaaa bbb;0.001
+13;aa bbbb;10000.00
+$ cat public/sample.csv | ruby script.rb
 +--+----+---------+
 | 1|aaa | 1 000,33|
 |  |bbb |         |
@@ -48,9 +53,13 @@ cat public/sample.csv | ruby script.rb
 Run the tests:
 
 ```sh
-bundle exec rspec
+bundle exec rake spec
 ```
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at [https://github.com/aleksandrilyin/csv_ascii_converter](https://github.com/aleksandrilyin/csv_ascii_converter).
 
 ## License
 
-The software is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The script is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

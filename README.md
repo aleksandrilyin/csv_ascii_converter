@@ -28,7 +28,7 @@ cat path/to/your/csvfile.csv | ruby script.rb
 
 ### Usage example
 
-```sh
+```
 $ cat public/sample.csv
 int;string;money
 1;aaa bbb ccc;1000.33

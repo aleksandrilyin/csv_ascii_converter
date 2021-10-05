@@ -23,7 +23,7 @@ bundle install
 Run the script:
 
 ```sh
-cat path/to/your/csvfile.csv | ruby script.rb
+cat path/to/your/csvfile.csv | bundle exec ruby script.rb
 ```
 
 ### Usage example
@@ -34,7 +34,7 @@ int;string;money
 1;aaa bbb ccc;1000.33
 5;aaaa bbb;0.001
 13;aa bbbb;10000.00
-$ cat public/sample.csv | ruby script.rb
+$ cat public/sample.csv | bundle exec ruby script.rb
 +--+----+---------+
 | 1|aaa | 1 000,33|
 |  |bbb |         |
@@ -50,7 +50,7 @@ $ cat public/sample.csv | ruby script.rb
 
 ## Testing
 
-Run the tests:
+Run the specs:
 
 ```sh
 bundle exec rake spec

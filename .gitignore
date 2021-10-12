@@ -8,7 +8,6 @@
 *.swp
 *.vi
 *~
-*.sass-cache
 *.iml
 .idea/
 
@@ -27,9 +26,6 @@ Thumbs.db
 .bundle/
 log/*.log
 pkg/
-spec/dummy/db/*.sqlite3
-spec/dummy/db/*.sqlite3-journal
-spec/dummy/tmp/
 
 .ruby-version
 

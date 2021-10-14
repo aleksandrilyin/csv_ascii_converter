@@ -9,6 +9,7 @@ require_relative "lib/money_converter"
 
 filename = $stdin
 options = {col_sep: ";", value_converters: {string: StringConverter, money: MoneyConverter}}
+
 rows = []
 
 SmarterCSV.process(filename, options).each { |data| rows << data.values }

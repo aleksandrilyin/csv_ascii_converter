@@ -28,24 +28,24 @@ cat path/to/your/csvfile.csv | bundle exec ruby script.rb
 
 ### Usage example
 
-```
+```sh
 $ cat public/sample.csv
-int;string;money
-1;aaa bbb ccc;1000.33
-5;aaaa bbb;0.001
-13;aa bbbb;10000.00
+# int;string;money
+# 1;aaa bbb ccc;1000.33
+# 5;aaaa bbb;0.001
+# 13;aa bbbb;10000.00
 $ cat public/sample.csv | bundle exec ruby script.rb
-+--+----+---------+
-| 1|aaa | 1 000,33|
-|  |bbb |         |
-|  |ccc |         |
-+--+----+---------+
-| 5|aaaa|     0,01|
-|  |bbb |         |
-+--+----+---------+
-|13|aa  |10 000,00|
-|  |bbbb|         |
-+--+----+---------+
+# +--+----+---------+
+# | 1|aaa | 1 000,33|
+# |  |bbb |         |
+# |  |ccc |         |
+# +--+----+---------+
+# | 5|aaaa|     0,01|
+# |  |bbb |         |
+# +--+----+---------+
+# |13|aa  |10 000,00|
+# |  |bbbb|         |
+# +--+----+---------+
 ```
 
 ## Testing

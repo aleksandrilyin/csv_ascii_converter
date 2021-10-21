@@ -16,6 +16,6 @@ class MoneyConverter
       "#{fractional_part}0"
     end
 
-    [new_integer_part, new_fractional_part].join(",")
+    "#{new_integer_part},#{new_fractional_part}"
   end
 end

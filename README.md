@@ -2,7 +2,7 @@
 
 # CSV ASCII Converter
 
-Converter from CSV to ASCII table.
+Converter from CSV file to ASCII table.
 
 ## Installation
 
